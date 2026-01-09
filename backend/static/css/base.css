@@ -115,10 +115,12 @@ body {
 }
 
 /*------------------------------------------------------------------------------------------*/
-/*Header Section*/
+/*-----------
+-------Header Container Layout Settings--------
+                                 -------------*/
 .header-containter {
-    width: 100%;
     max-width: 1200px;
+    width: 100%;
     align-items: stretch;
     position: relative;
 }
@@ -145,30 +147,38 @@ body {
      align-items: center;
 }   
 
+/*----------------*/
+/*--------Header content settings--------*/
+/*----------------*/
 
-.navbar {
-    display:none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-}   /*mobile*/
 
-.navbar.active {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    height: 200px;
+/*Mobile */
+@media (min-width: 0px) {
+    .navbar-in {
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+    }   
+
+    .navbar-out.active {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        background-color:var(--clr-surface-tonal-a10) ;
+    }
+
+    .hamburger {
+        display: block;
+    }  
 }
 
-.hamburger {
-    display: block;
-}  
-
-
-
+/*Tablet*/
 @media (min-width: 768px) {
-    .navbar{
+    .navbar-in{
         display:flex;
         flex-direction: row;
     }
@@ -177,7 +187,7 @@ body {
         display: none;
     }
 
-    .navbar button {
+    .navbar-in button {
     flex: 1;
     padding: 0.50rem 1.5rem;
     text-align: center;
@@ -187,9 +197,9 @@ body {
     color: white;
     font-weight: bold;
     font-size: 16px;
-}
+    }
 
-.navbar button:hover {
+.navbar-in button:hover {
     flex: 1;
     padding: 0.50rem 1.5rem;
     text-align: center;
@@ -201,10 +211,17 @@ body {
     color: white;
     font-weight: bold;
     font-size: 16px;
-}
+    }
 }
 
-/*----------this is the main content area------------*/
+/*Desktop*/
+@media (min-width: 1280px) {
+
+}
+
+
+
+/*----------------------*/
 
 .main-content {
     width: 100%;
@@ -218,27 +235,12 @@ body {
 }
 
 .main-content-grouping {
-    display:flex;
-    flex-direction:column;
+    display:none;
+    
 }
 
 /*--------*/
 /*----SideBar----*/
 /*--------*/
-
-.sidebar-container {
-    /*Layout*/
-    position: fixed;
-    top:0;
-    left:0;
-    width: 400px;
-    height: 100vh; 
-    
-    /*Theme*/
-    background-color: rgba(0, 0, 0, 0.85);
-
-    /*Utilites*/
-    transform: translateX(-100%);
-}
 
 

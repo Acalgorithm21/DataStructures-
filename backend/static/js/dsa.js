@@ -10,7 +10,7 @@ function toggleMenu() {
 
 //getting the elements
 const button = document.getElementById('hamburger');
-const menu = document.getElementById('navbar')
+const menu = document.getElementById('navbar-out')
 
 //eventlisteners 
 button.addEventListener('click', toggleMenu);
