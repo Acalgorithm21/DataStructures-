@@ -1,13 +1,8 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>learn dsa</title>
-        <link rel="stylesheet" href="static/css/base.css">
-        
-    </head>
-    <body>
-       <h1>This is the tree page!</h1>
-    </body>
-</html>
+{% extends "base.html" %}
+{% block csspath %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+{%endblock%}
+
+{%block sample%}
+<h1>This is the tree page! </h1>
+{%endblock%}
