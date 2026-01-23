@@ -3,10 +3,54 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
 {%endblock%}
 
+<!--Content for Generic datatypes, include charts, paragaphs, videos, or even interactivity-->
+{%block Generics%}
+<p>
+    A generic data type is a type of programming tool that allows you to write flexible, 
+    reusable code without specifying exact data types in advance. Instead of creating separate 
+    functions or classes for integers, strings, or other data, a generic lets you define a 
+    “placeholder” type that can work with any data type. For example, a generic stack or list can 
+    store integers, strings, or custom objects using the same underlying code.<br><br> This not only reduces
+    repetition but also makes your programs more type-safe, because the compiler can enforce that
+    only the intended type is used when the generic is applied. Generics are widely used in modern
+    programming languages like Java, C#, and TypeScript to create robust, reusable, and
+    maintainable code.
+</p>
 
 
+{%endblock%}
 
+<!--Content for Abstract datatypes, include charts, paragaphs, videos, or even interactivity-->
+{%block Abstracts%}
+<p>
+    An Abstract Data Type (ADT) is a way to define what a data structure should do, without
+    specifying how it does it. It focuses on the operations and behaviors that are required, 
+    such as adding, removing, or accessing elements, rather than the underlying implementation.
+    For example:<br><br>
 
-{%block sample%}
-<h1>This is the home page! </h1>
+    A Stack ADT defines operations like push(), pop(), and peek().<br><br>
+    A Queue ADT defines operations like enqueue() and dequeue().<br><br>
+    The key idea is that an ADT tells you the “what”, not the “how.” Different data structures
+    (like arrays, linked lists, or hash tables) can implement the same ADT in different ways,
+    each with its own advantages and trade-offs in terms of speed, memory usage, and performance.
+    By understanding ADTs, programmers can choose the right data structure for the task, write more
+    reusable code, and reason about time and space efficiency.
+</p>            
+{%endblock%}
+
+<!--Content for Time and space complexity, include charts, paragaphs, videos, or even interactivity-->
+{%block TimeSpace%}
+<p>
+    Time complexity and space complexity are ways to measure how efficiently an algorithm uses
+    resources as the size of the input grows.
+    Time complexity tells us how fast an algorithm runs depending on the number of elements it
+    processes. 
+    For example:<br><br> A linear search through a list of n items takes O(n) time, while a
+    binary search takes O(log n) time.<br><br>
+    Space complexity tells us how much memory an algorithm uses. For instance:<br><br> Creating a copy of
+    an array of n elements takes O(n) space, while performing operations in-place might take only
+    O(1) space.<br><br>
+    Understanding time and space complexity helps programmers choose the best data structures and 
+    algorithms, write code that scales well, and avoid performance problems as inputs get larger.
+</p>                            
 {%endblock%}
