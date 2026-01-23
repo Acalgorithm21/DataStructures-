@@ -5,10 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>learn dsa</title>
         {% block csspath %} {% endblock %}
+        <link rel="stylesheet" href="https://unpkg.com/codemirror@5/lib/codemirror.css">
+
+
         
     </head>
     <body>
         <!--This is the header section-->
+    <section class = "app">
         <section class = "header-container">    
             <div class = "header-layout">
                 <div class = "header-grouping">
@@ -56,94 +60,72 @@
                     <div class = "main-content-dsa">
                         <div class ="Visualizations">
                             <h1>Visualizations
-                                <p>
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                </p>
+                                {%block Visualizations%}
+                                {%endblock%}
                             </h1>
 
                         </div>
                         <div class ="Operations">
                             <h1>Operations
-                                <p>
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                </p>
+                                {%block Operations%}
+                                {%endblock%}
                                 
                             </h1>
                         </div>
                         <div class ="Implementations">
                             <h1>Implementations
-                                <p>
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                </p>
+                                {%block Implementations%}
+                                {%endblock%}
+                                
                             </h1>
                                 
                         </div>
                         <div class ="Time/Space">
-                            <h1>Time/Space Complexity</h1>
+                            <h1>Time/Space Complexity
+                                {%block Complexities%}
+                                {%endblock%}
+                                 
+                            </h1>
                         </div>
                         <div class ="Applications">
-                            <h1>Applications</h1>
+                            <h1>Applications
+                                {%block Applications%}
+                                {%endblock%}
+                                 
+                            </h1>
                         </div>
                     </div>
 
                     <div class = "main-content-home">
                         <div class ="Generics">
                             <h1>Generic Data Types
-                                <p>
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                </p>
+                                {%block Generics%}
+                                {%endblock%}
                             </h1>
                         </div>
                         <div class ="Abstracts">
                             <h1>Abstract Data Types
-                                <p>
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                </p>
+                                {%block Abstracts%}
+                                {%endblock%}
                             </h1>
                         </div>
                         <div class ="Time/space">
                             <h1>Time and Space Complexity
-                                <p>
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                    This will be a paragraph explaining What generic data types are on the home page
-                                    This will be a paragraph explaining what generic data types are on the home page 
-                                </p>
+                                {%block TimeSpace%}
+                                {%endblock%}
                             </h1>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+    </section>
 
 
         <script src="static/js/dsa.js"></script>
+        <script src="static/js/homepage.js"></script>
+
+        <script src="https://unpkg.com/codemirror@5/lib/codemirror.js"></script>
+        <script src="https://unpkg.com/codemirror@5/mode/javascript/javascript.js"></script>
     </body>
 </html>

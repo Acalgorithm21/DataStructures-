@@ -69,6 +69,7 @@
 --space-6: 2rem;     /* 32px – large */
 --space-7: 3rem;     /* 48px – section spacing */
 --space-8: 4rem;     /* 64px – major sections */
+--space-10: 8rem;
    
  /*--Border Width Scale--*/
 
@@ -265,12 +266,13 @@ body {
 
 .main-layout {
  /*Layout Settings*/
-    margin-left: var(--space-1);
-    margin-right: var(--space-1);
+    margin-left: var(--space-10);
+    margin-right: var(--space-10);
 }
 
 
 .main-grouping {
+    height: 100vh;
     display: flex ;
     flex-direction: row;
     justify-content: space-between;
@@ -305,6 +307,7 @@ body {
         flex-direction: column;
         padding-left: var(--space-8);
         padding-right: var(--space-8);
+        height: 500px;
     }
  
     .main-content-home p {
